@@ -347,6 +347,11 @@ window-rule {
 }
 
 window-rule {
+    match app-id="pavucontrol"
+    open-floating true
+}
+
+window-rule {
     match app-id="foot"
     open-floating true
 }
