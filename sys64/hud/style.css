@@ -1,0 +1,47 @@
+window {
+    padding: 5px 8px;
+    border: 1px solid #354039;
+    border-radius: 2px;
+    background-color: rgba(12, 18, 15, 0.96);
+}
+
+* {
+    font-family: "JetBrainsMono Nerd Font", monospace;
+    font-size: 10pt;
+}
+
+progressbar,
+progressbar trough,
+progressbar progress {
+    min-height: 3px;
+    border: none;
+    border-radius: 2px;
+}
+
+progressbar trough {
+    background-color: #222b24;
+}
+
+progressbar progress {
+    background-color: #9eae91;
+}
+
+scale trough {
+    min-height: 3px;
+    background-color: #222b24;
+    border: none;
+    border-radius: 2px;
+}
+
+scale highlight {
+    background-color: #9eae91;
+    border-radius: 2px;
+}
+
+scale slider {
+    min-width: 8px;
+    min-height: 8px;
+    background-color: #b0c5a0;
+    border: 1px solid #354039;
+    border-radius: 50%;
+}

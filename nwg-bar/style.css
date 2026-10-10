@@ -1,0 +1,39 @@
+* {
+    font-family: "JetBrainsMono Nerd Font", monospace;
+    font-size: 12px;
+    color: #dfe3dc;
+}
+
+window,
+.background {
+    background-color: rgba(12, 18, 15, 0.96);
+}
+
+button {
+    background-image: none;
+    background-color: #151b17;
+    border: 1px solid #354039;
+    border-radius: 2px;
+    box-shadow: none;
+    padding: 12px 18px;
+    margin: 5px;
+}
+
+button:hover,
+button:focus {
+    background-image: none;
+    background-color: #222b24;
+    border-color: #9eae91;
+}
+
+button:active {
+    background-color: #354039;
+}
+
+label {
+    color: #dfe3dc;
+}
+
+image {
+    color: #9eae91;
+}

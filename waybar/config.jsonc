@@ -1,0 +1,111 @@
+{
+    "layer": "top",
+    "position": "bottom",
+
+    "width": 800,
+    "height": 28,
+
+    "fixed-center": true,
+
+    "margin-bottom": 8,
+    "spacing": 0,
+
+    "modules-left": [
+        "custom/os",
+        "niri/workspaces",
+        "niri/window"
+    ],
+
+    "modules-center": [
+        "clock"
+    ],
+
+    "modules-right": [
+        "tray",
+        "niri/language",
+        "battery",
+        "pulseaudio",
+        "network",
+        "custom/power"
+    ],
+
+    "custom/os": {
+        "format": "",
+        "tooltip": false,
+        "on-click": "fuzzel"
+    },
+
+    "niri/workspaces": {
+        "format": "{index}",
+        "disable-scroll": false,
+        "all-outputs": true,
+        "on-click": "focus",
+        "on-scroll-up": "niri msg action focus-workspace-up",
+        "on-scroll-down": "niri msg action focus-workspace-down"
+    },
+
+    "niri/window": {
+        "format": "{title}",
+        "max-length": 28,
+        "separate-outputs": true
+    },
+
+    "clock": {
+        "format": "{:%d.%m.%Y %H:%M}",
+        "tooltip": false
+    },
+
+    "niri/language": {
+        "format": "{short}",
+        "tooltip": false
+    },
+
+    "battery": {
+        "format": "{capacity}% {icon}",
+        "format-charging": "{capacity}% 󰂄",
+        "format-plugged": "{capacity}% 󰚥",
+        "format-icons": [
+            "󰁺", "󰁻", "󰁼", "󰁽", "󰁾",
+            "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"
+        ],
+        "states": {
+            "warning": 30,
+            "critical": 15
+        },
+        "hide-if-empty": true,
+        "tooltip": false
+    },
+
+    "tray": {
+        "icon-size": 14,
+        "spacing": 6,
+        "show-passive-items": true,
+        "reverse-direction": false,
+        "tooltip": true
+    },
+
+    "pulseaudio": {
+        "format": "{icon}",
+        "format-muted": "󰝟",
+        "format-icons": {
+            "default": ["󰕿", "󰖀", "󰕾"]
+        },
+        "scroll-step": 5,
+        "on-click": "pavucontrol",
+        "tooltip": false
+    },
+
+    "network": {
+        "format-wifi": "",
+        "format-ethernet": "󰈀",
+        "format-disconnected": "󰖪",
+        "tooltip": true,
+        "tooltip-format": "{ipaddr}"
+    },
+
+    "custom/power": {
+        "format": "⏻",
+        "tooltip": false,
+        "on-click": "nwg-bar"
+    }
+}

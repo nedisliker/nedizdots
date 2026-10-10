@@ -1,0 +1,17 @@
+[
+  {
+    "label": "_Logout",
+    "exec": "niri msg action quit --skip-confirmation",
+    "icon": "system-log-out"
+  },
+  {
+    "label": "_Reboot",
+    "exec": "loginctl reboot",
+    "icon": "system-reboot"
+  },
+  {
+    "label": "_Shutdown",
+    "exec": "loginctl poweroff",
+    "icon": "system-shutdown"
+  }
+]
